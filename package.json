@@ -1,0 +1,25 @@
+{
+  "name": "express-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kitakitabauer/express-test.git"
+  },
+  "author": "kitakitabauer <kitakita.d.kitakita@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kitakitabauer/express-test/issues"
+  },
+  "homepage": "https://github.com/kitakitabauer/express-test#readme",
+  "dependencies": {
+    "connect-redis": "^3.3.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3"
+  }
+}
