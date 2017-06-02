@@ -27,13 +27,19 @@ app.use(session({
   cookie: {
     path: '/',
     secure: 'auto',
-    // maxAge: 20000, // millseconds
+    maxAge: 20000, // millseconds
   }
 }));
 
 app.route('/')
   .get(function(req, res) {
-    const begginer = req.session.value || Math.random();
+    let begginer;
+    if (req.session.value) {
+      console.log("sessionあるえ");
+      begginer = req.session.value;
+    } else {
+      begginer = Math.random();
+    }
     req.session.value = begginer;
     res.send('Beginner value: ' + begginer);
 
